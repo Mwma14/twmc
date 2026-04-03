@@ -1,0 +1,9 @@
+services:
+  - type: worker
+    name: music 1
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: pro plus
+    region: singapore
+    buildCommand: pip3 install --no-cache-dir --upgrade --requirement requirements.txt
+    envVars:
